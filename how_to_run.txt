@@ -1,0 +1,30 @@
+Make sure you have python 3.x and Django version is 2.x for the app to work
+
+1. Move into web_app/hwrkannada folder
+
+2. Open terminal
+
+2. Run - pip install -r requirements.txt 
+The above installs all the required packages to run the model
+
+3. Execute - python manage.py makemigrations hwrapp
+The above checks if any fields were modified/added/deleted in models.py
+
+4. Execute - python manage.py migrate
+The above creates tables according to specification of fields provided in models.py
+The result is stored in db.sqlite3
+
+5. Execute - python manage.py runserver
+
+6. Open "http://localhost:8000/hwrapp/"
+____________________________________________________________________________________________________________________________________
+
+P.S: Use left-right arrow keys(<- / ->) to toggle between pages on the website
+
+Warning: 
+We also made use of a LRN2D layer which was removed from the keras source. It needs to be manually included as mentioned below:
+
+*Paste the contents of keras_addition.txt in /usr/local/lib/python3.5/dist-packages/keras/layers/normalization.py.
+*Add from .normalization import LRN2D right under the import from .normalization import BatchNormalization in 
+	  /usr/local/lib/python3.5/dist-packages/keras/layers/__init__.py . The file path may vary depending on your python version.
+

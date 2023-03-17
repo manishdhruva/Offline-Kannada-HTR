@@ -1,0 +1,13 @@
+body {
+    background: white url("images/bodybg5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    
+}
+
+#result	 {
+	font-size:30px;
+}
